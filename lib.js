@@ -18,3 +18,21 @@ export let flag = false;
 export function touch() {
 flag = true;
 }
+
+// VAR, LET & CONST
+export function varExample() 
+{
+    for(var i = 0; i < 5; i++) 
+    {
+        console.log(i);
+    }
+    console.log(i);
+}
+export function letExample() 
+{
+    for(let i = 0; i < 20; i++) 
+    {
+        console.log(i);
+    }
+    console.log(i);
+}

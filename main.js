@@ -52,3 +52,11 @@ const author =
     }
 };
 console.log(author.printBooks())
+
+// VAR, LET, CONST
+import { varExample, letExample } from './lib.js';
+console.log("VAR")
+varExample();
+
+console.log("LET")
+letExample();
