@@ -10,6 +10,7 @@ console.log(flag)
 touch();
 console.log(flag)
 
+
 // Class
 class Vehicle 
 {
@@ -39,3 +40,15 @@ console.log("Vehicle has", wheels + " Wheels.")
 
 console.log(car instanceof Car);
 console.log(car instanceof Vehicle);
+
+
+// ARROW
+const author = 
+{
+    fullName: "William Shakespeare",
+    books: ['Works','As You Like It', 'Measure for Measure'],
+    printBooks() {
+        this.books.forEach(book => console.log(book + ' by ' + this.fullName));
+    }
+};
+console.log(author.printBooks())
