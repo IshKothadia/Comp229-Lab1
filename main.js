@@ -6,6 +6,36 @@ console.log("Multiplication answer is :",multiply(16, 4))
 
 console.log("String is :",doSomething())
 
-console.log(flag);
+console.log(flag)
 touch();
-console.log(flag);
+console.log(flag)
+
+// Class
+class Vehicle 
+{
+    constructor(wheels) 
+    {
+        this.wheels = wheels;
+    }
+    toString() {
+        return this.wheels;
+    }
+}
+class Car extends Vehicle {
+    constructor(color) 
+    {
+        super(4);
+        this.color = color;
+    }
+    toString() {
+        return super.toString()+ ' Wheels and' + ' color is ' + this.color;
+    }
+}
+let car = new Car('black');
+let wheels = new Vehicle('8');
+
+console.log("Car has",car.toString());
+console.log("Vehicle has", wheels + " Wheels.")
+
+console.log(car instanceof Car);
+console.log(car instanceof Vehicle);
