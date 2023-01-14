@@ -34,5 +34,23 @@ export function letExample()
     {
         console.log(i);
     }
-    console.log(i);
+    // console.log(i);
+}
+
+// DEFAULT
+export function addition(x, y = 0) {
+    return x + y;
+}
+
+// REST
+export function userFriends(user, ...friends) {
+    console.log(user + ' has ' + friends.length + ' friends');
+    console.log(friends + ' are friends of ' + user)
+}
+
+// SPREAD
+export function bestFriends(firstFriend, secondFriend, thirdFriend) {
+    console.log(firstFriend);
+    console.log(secondFriend);
+    console.log(thirdFriend);
 }

@@ -60,3 +60,11 @@ varExample();
 
 console.log("LET")
 letExample();
+
+// DEFAULT, REST, SPREAD
+import { addition, userFriends, bestFriends } from './lib.js';
+console.log("Addition with default is : ", addition(35))
+console.log("Addition is : ", addition(12,5));
+
+console.log(userFriends('Isha', 'Nirali', 'Krunal'));
+console.log(bestFriends(...['Milan', 'Shrusti', 'Michelle']));
