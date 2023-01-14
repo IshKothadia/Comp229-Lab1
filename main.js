@@ -68,3 +68,7 @@ console.log("Addition is : ", addition(12,5));
 
 console.log(userFriends('Isha', 'Nirali', 'Krunal'));
 console.log(bestFriends(...['Milan', 'Shrusti', 'Michelle']));
+
+// CLOSURES
+import {parentClass} from './lib.js';
+console.log(parentClass());

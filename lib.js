@@ -54,3 +54,12 @@ export function bestFriends(firstFriend, secondFriend, thirdFriend) {
     console.log(secondFriend);
     console.log(thirdFriend);
 }
+
+// CLOSURES
+export function parentClass() {
+    const message = 'Hello..!! This is Isha Kothadia..!';
+    function childClass() {
+        alert (message);
+    }
+    return console.log(childClass());
+}
